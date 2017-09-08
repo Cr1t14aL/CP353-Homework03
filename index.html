@@ -1,0 +1,62 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width" initial-scale="1" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src='build/main.bundle.js'></script>
+    <!--<script src='index.js'></script>-->
+    <title>Beer Search</title>
+
+</head>
+<style>
+ body {
+     background-size: 100% 100%;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+ }   
+    </style>
+
+<body background="http://sendy.unionpress.co.uk/uploads/1495712737.jpg" >
+
+    <body>
+        <div>
+
+            <br />
+
+            <nav id="mainNav" class="navbar navbar-inverse navbar-fixed-top">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-tab-collapse">
+                                        <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                                    </button>
+                        <a class="navbar-brand page-scroll" href="#">Beer</a>
+                    </div>
+                </div>
+            </nav>
+            <br>
+            <br>
+            <div class="panel-body">
+                <div class="row  form-group">
+                    <div class="col-sm-4">
+                        <label class=" pull-right">Name: </label>
+                    </div>
+                    <div class="col-sm-4">
+                        <input class="form-control pull-left" id="beerName" placeholder="Example Buzz" />
+                    </div>
+                    <div class="col-sm-2 ">
+                        <button class="btn btn-info pull-left form-control" onclick="SearchBeer(document.getElementById('beerName').value)">Search</button>
+                    </div>
+                </div>
+            </div>
+            <center><h1>Beer List</h1></center>
+            <div class="modal-dialog">
+                    <div class="modal-content">
+            <center><p id="result"></p></center>
+            </div>
+            </div>
+    </body>
+
+</html>
